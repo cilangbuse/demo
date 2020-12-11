@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .di {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: fixed;
+            top: 2%;
+            left: 2%;
+        }
+        
+        .big {
+            width: 100%;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <div class="di">
+
+        </div>
+    </div>
+</body>
+<script>
+    var di = document.querySelector('.di')
+    addEventListener('keydown', function a(e) {
+        var a = di.style.width;
+        var b = di.style.left;
+        console.log(di.style.width)
+            // if (e.keyCode == 68) {
+            //     // var n = 0;
+            //     di.style.left = a + '%'
+            // } else if (e.keyCode == 87) {
+            //     // var n = 0;
+            //     b = b--;
+            //     di.style.top = b + '%'
+            // } else if (e.keyCode == 83) {
+            //     // var n = 0;
+            //     b = b++;
+            //     di.style.top = b + '%'
+            // } else if (e.keyCode == 65) {
+            //     // var n = 0;
+            //     a = a--;
+            //     di.style.left = a + '%'
+            // }
+    })
+</script>
+
+</html>
